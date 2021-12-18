@@ -1,0 +1,38 @@
+#bg {
+  background-color: yellow;
+
+  background-image: url("images/image-1.jpeg"), url("images/image-2.jpeg");
+  /* if you want to add multiple background images */
+
+  /* background-repeat: no-repeat; */
+  background-repeat: repeat-x;
+  /* background-repeat: repeat-y; */
+  /* background-repeat: no-repeat; */
+  /* background repeat is used to control if you want the image to be repeated in either x axis or y axis or both or none */
+
+  background-position: left top, right bottom;
+  /* if you want to give position for the multiple background images you have added
+   other supported values for background-color */
+  /* background-position: 5% 10%; */
+  /* background-position: 50px 50px; */
+
+  background-size: 50px 50px;
+  /* background-size: contain; */
+  /* use contain when the ratio of the parent and div are matching because
+  it will not cover entire parent element but will fill to exact dimensions of the image; */
+  /* background-size: cover; */
+  /* use cover when you want to cover to entire parent element but 
+  you are okay with a little bit of cropping that will happenm in the process along edges
+*/
+
+  /* background-attachment: fixed; */
+  background-attachment: scroll;
+  /* background-attachment is used to tell whether your bg-image is supposed to be fixed a position 
+  or 
+  if you want it to also support and adjust with scroll; */
+}
+
+p {
+  height: 100%;
+  width: 100%;
+}
