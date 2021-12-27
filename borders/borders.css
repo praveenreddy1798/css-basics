@@ -1,0 +1,34 @@
+
+#border {
+  border-style: solid;
+  /* There are many other styles that you can choose to give to your border */
+  border-top-style: dashed;
+
+  border-width: 10px;
+  /* Border for all sides */
+  border-width: 10px 20px;
+  /* Border for top-bottom(10px) and right-left(20px) */
+  border-width: 10px 5px 5px 10px;
+  /* Border for top(10px),right(5px), bottom(5px),left(10px) */
+  border-left-width: 2px;
+  /* border width for just left side of border */
+
+  border-color: red;
+  /* Border for all sides */
+  border-color: red blue;
+  /* Border for top-bottom(red) and right-left(blue) */
+  border-color: red green green yellow;
+  /* Border for top(yellow),right(green), bottom(green),left(yellow) */
+  border-left-color: rgb(241, 13, 13);
+  /* border color for just left side of border */
+
+  border-radius: 5px;
+  /* Border Radius is used to give a alteration to the edges of the borders */
+  /* And similar as for border-width and border-style you can give a 
+  single value(all sides) or two values(top-bottom and right-left) or four values (top right bottom left) */
+  border-top-right-radius: 2px;
+  /* Border radius for just top right */
+
+  border: 10px solid rgb(248, 17, 17);
+  /* short hand for border => border-width(1px) border-style(solid) border-color(grey) */
+}
