@@ -1,0 +1,11 @@
+/* Some important points for margin
+
+1. Margin is the gap outside the border and it's neighbouring element
+
+2. -px works for margin
+
+3. Margin collapse => suppose if there are two elements one below other and for the 
+1st elem you give margin bottom 10px and for second element you give margin top 20px,
+the gap between two elems wouldn't be 30px, instead it will take the max margin i.e 20px. 
+Margin collapse is applicable only for elements one below the other, for elements side to side 
+if you give margin right for 1st as 10px and margin left for 2nd as 20px the gap will be 30px  */

@@ -1,0 +1,8 @@
+/* Some important points around padding
+
+1. Padding is the gap between content inside a body and the border
+
+2. -px doesn't work for padding
+
+3. If the parent is of type auto, then as much as padding you give,
+   so much the size of the body will keep increasing or decreasing */

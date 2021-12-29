@@ -1,0 +1,40 @@
+#text {
+  width: 500px;
+  height: 300px;
+  border: 1px solid #dd4343;
+
+  text-indent: 20px;
+  /* text-indent: 10px => the content will give a space of 10px at 
+  the start and the the text will work as normal */
+
+  white-space: pre;
+  /* by default if you add text and if you give gaps or spaces,
+  it will not consider them unless you add a <br /> tag.
+  But *white-space: pre;* can fix that and it will take even the gaps
+  into consideration and render them as it is with gaps. */
+
+  white-space: nowrap;
+  /* Suppose irrespective of the gaps you have given, 
+  if you want all of it to be just in a single line irrespective
+  of the parent body width then *white-spacing: no-wrap;* can solve that for you  */
+
+  word-wrap: break-word;
+  /* Suppose if there is a single big word that exceeds the container body width
+  and suppose if you want that word to break from the place it starts exceeds
+  and come to the next line *word-wrap: break-word;* can solve that for you */
+
+  font-size: 20px;
+  /* *font-size* => to increase the font size */
+
+  text-shadow: 1px 1px 0 rgb(255, 217, 192);
+  /* offset-x | offset-y | blur-radius | color */
+
+  writing-mode: vertical-rl;
+  /* Suppose if you want the writing mode to be in vertical direction then
+  *writing-mode: vertical-rl* will make the text flow to start from right most side
+  of the border in vertical direction */
+
+  writing-mode: vertical-lr;
+  /* *writing-mode: vertical-lr* will make the flow of content to start from left
+   most side of parent container in vertical direction */
+}
