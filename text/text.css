@@ -37,4 +37,7 @@
   writing-mode: vertical-lr;
   /* *writing-mode: vertical-lr* will make the flow of content to start from left
    most side of parent container in vertical direction */
+
+  line-height: 50px;
+  /* Height of each line */
 }
