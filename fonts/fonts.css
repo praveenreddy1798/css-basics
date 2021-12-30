@@ -41,4 +41,8 @@ p {
   So what the above will do is, it will first check if alex brush is available,
   if available then that will render otherwise the next followed font-family ie
   Licorice will get rendered */
+
+  font: italic small-caps 200 20px 10px "alex brush";
+  /* Shorthand property for setting 'font-style', 'font-variant', 'font-weight',
+   'font-size', 'line-height', and 'font-family' */
 }
