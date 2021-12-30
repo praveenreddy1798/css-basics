@@ -1,0 +1,27 @@
+a {
+  text-decoration: none;
+}
+a:link {
+  color: blue;
+}
+a:visited {
+  color: black;
+}
+a:hover {
+  color: rgb(250, 66, 10);
+}
+a:active {
+  color: seagreen;
+}
+
+/*
+1.:link => initial styles to the link
+2.:visited => if you have already visited 
+the link then the style that has to be associated to it
+3.:hover => when you hover on the link
+4.:active => when you just click on the link the styles
+associated to active will be seen
+*/
+
+/* The above is the recommended order of using the above tags when
+ they are together */

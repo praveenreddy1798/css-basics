@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "alex brush";
+  /* font-family: alex; */
+  /* Any name can be given if its a single word 
+  it can be without quotes otherwise gotta be in quotes */
+
+  src: url("../external-fonts/AlexBrush-Regular.ttf");
+}
+/* font-face we use when we want to use a custom
+font that we have downloaded. */
+
+/* So with font we have downloaded we can also use the 
+fonts from links as well */
+
+h1 {
+  font-weight: 200;
+  /* Changing the boldness of the text */
+
+  font-family: "Poppins", sans-serif;
+  /* After embedding the google fonts in links
+  we are using their respective css we got 
+  from google fonts */
+
+  font-family: "alex-brush", "Poppins", sans-serif;
+}
+
+p {
+  font-size: 30px;
+  font-weight: 800;
+  font-style: italic;
+
+  font-variant: small-caps;
+  /* It will capitalize the given text without
+   affecting the structure sizes that already existed
+   For example in the word Lorem => All will be capital
+   but still L and orem will retain the same size as in Lorem */
+
+  font-family: "alex brush", "Licorice", cursive;
+  /* In the above we can see that we have used first the custom downloaded font
+  followed by the google fonts style from the link we added in .html file
+  So what the above will do is, it will first check if alex brush is available,
+  if available then that will render otherwise the next followed font-family ie
+  Licorice will get rendered */
+}
