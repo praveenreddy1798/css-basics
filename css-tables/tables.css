@@ -1,0 +1,43 @@
+table {
+  border: 1px solid black;
+
+  border-collapse: collapse;
+  /* if two borders are there next to next and if u want to collapse them
+and make them into a single border then use border-collapse
+*/
+
+  border-collapse: separate;
+  border-spacing: 20px 20px;
+  /* The above two are to have each row as blocks inside a big block */
+
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+}
+
+caption {
+  border: 1px solid black;
+  caption-side: bottom;
+}
+
+tr {
+  border: 1px solid black;
+}
+/* Note: border doesnt apply on tr */
+
+th {
+  border: 1px solid black;
+  padding: 20px;
+  text-align: right;
+  height: 40px;
+}
+
+td {
+  border: 1px solid black;
+  height: 95px;
+  padding: 5px;
+  text-align: center;
+  vertical-align: center;
+}
+
+/* vertical-align and text-align work with td and th */
