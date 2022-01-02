@@ -1,0 +1,20 @@
+div {
+  border: 1px solid red;
+  width: 500px;
+  padding: 10px;
+  margin: 50px;
+  background-color: yellow;
+
+  box-shadow: 5px 5px 2px 5px grey;
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+
+  box-shadow: inset 5px 2px 5px 10px grey;
+  /* inset | offset-x | offset-y | blur-radius | spread-radius | color */
+  /* inset is used if you want the shadow to be inside instead of outside */
+
+  box-shadow: 5px 2px 5px 10px red, -5px -12px 5px 10px rgb(238, 238, 9);
+  /* (-) SIGN is used with offset-x or offset-y if you want the shadow to be on text-shadow
+  to be present on the other side */
+  /* Any number of shadows, separated by commas */
+  /* By using the above we can use multiple box-shadows */
+}
