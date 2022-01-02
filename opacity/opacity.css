@@ -1,0 +1,24 @@
+p {
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(255, 94, 0);
+  margin-top: -60px;
+  background-size: contain;
+
+  opacity: 0.5;
+  /* The opacity here what it does is suppose if we have to
+  place one element over the other and see what both depicts 
+  then reducing the opacity will do that for us */
+}
+img:hover {
+  opacity: 0.7;
+  /* opacity of 1 is fully transparent and 0 makes it disappear completely */
+  /* so the above what it does is when we hover over the image it will blur it a little
+  giving a better effect */
+}
