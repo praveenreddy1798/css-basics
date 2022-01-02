@@ -1,0 +1,25 @@
+:root {
+  --primary-color: blue;
+  --secondary-color: green;
+}
+
+div {
+  height: 300px;
+  border: 1px solid red;
+  position: relative;
+  width: 300px;
+  background-color: var(--secondary-color);
+  /* var() is used to declare colors in root and re-use them as done above */
+}
+
+.inner-div {
+  position: absolute;
+  border: 1px solid rgb(22, 22, 22);
+  right: 0;
+  background-color: var(--secondary-color);
+  width: calc(100% - 100px);
+  /* by using calc we get to set and maintain properties dynamically
+  We can see in above that the blue background ratio will be same across
+  all devices because of the formula that we have added
+   */
+}
