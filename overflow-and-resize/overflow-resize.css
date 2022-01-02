@@ -1,0 +1,22 @@
+.overflow {
+  height: 100px;
+  width: 300px;
+  border: 1px solid red;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  overflow: auto;
+  /* The system itself will decide whether to add scroll or no 
+  based on the content that is rendered; */
+}
+
+.resize {
+  resize: horizontal;
+  /* will only enable resize in horizontal direction */
+
+  resize: vertical;
+  /* will only enable resize in vertical direction */
+
+  resize: both;
+  /* will enable resize in both direction */
+}
