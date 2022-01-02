@@ -1,0 +1,27 @@
+li:first-child {
+  color: green;
+  /* The first child of li is List 1, so only first list
+will turn to green */
+}
+
+li:last-child {
+  color: blue;
+}
+
+li:nth-child(2) {
+  /* nth-child lets to target the specific numbered element number */
+  /* 2nd li child will have orange color */
+  color: orange;
+}
+
+li:nth-child(4n + 0) {
+  /* we can also add patterns like 4n+0 to apply styles */
+  /* So 4th and 8th li child will have pink color */
+  color: pink;
+}
+
+li:nth-last-child(3) {
+    /* it targets elements from last */
+    /* nth-last-child(3) will target the last 3rd child */
+    color: violet;
+  }
