@@ -1,0 +1,15 @@
+/* object-fit and object-position is similar to background-size and backcground-position
+object-fit,object-position is used for fore-ground,
+whereas background-size, backcground-position is used
+for background */
+img {
+  width: 600px;
+  height: 200px;
+  border: 5px solid gray;
+  object-fit: contain;
+  /*
+  object-fit: cover;
+  object-fit: fill;
+  */
+  object-position: top left;
+}
