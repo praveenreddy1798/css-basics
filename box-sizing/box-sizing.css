@@ -1,0 +1,21 @@
+#div-1 {
+  box-sizing: content-box;
+  /* content-box is the default for box-sizing; */
+  width: 100px;
+  padding: 10px;
+  border: 5px solid grey;
+  background-color: violet;
+  /* totalWidth = width + padding + border 
+ i.e 100 + 10 + 5 = 25 */
+}
+
+#div-2 {
+  box-sizing: border-box;
+  width: 100px;
+  padding: 10px;
+  border: 5px solid grey;
+  /* totalWidth = width
+    padding and border will get adjusted inside the width itself
+    when we use border-box */
+  background-color: yellow;
+}
