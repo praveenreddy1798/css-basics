@@ -1,0 +1,25 @@
+/* CSS Sprites are a means of combining multiple images into a single image file
+for use on a website, to help with performance.
+CSS Sprites is pretty much the exact same theory: get the image once, and shift it
+around and only display parts of it. This reduces the overhead of having to fetch
+multiple images. */
+
+#sprite {
+  background-image: url("./sprite.png");
+  background-repeat: no-repeat;
+  border: 1px solid grey;
+  height: 128px;
+
+  background-position: -5px -5px;
+  /* This is to get the canada flag where -5px we added is just to get rid of padding */
+
+  background-position: -5px -143px;
+  /* This is to get the usa flag where -5px we added is just to get rid of padding of x axis
+  and -143px is to crop out upto 143px from top and then apply height of 128px from that position
+  get just the usa flag */
+
+  background-position: -5px -288px;
+  /* This is to get the usa flag where -5px we added is just to get rid of padding of x axis
+  and -288px is to crop out upto 288px from top and then apply height of 128 px from that
+  position to just get just the mexico flag */
+}

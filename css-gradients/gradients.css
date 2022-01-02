@@ -1,0 +1,26 @@
+/* gradients are basically used to smotthly mix colors 
+liner gradient is in lines
+radial gradient is in ellipse form */
+
+#gradient {
+  height: 500px;
+  border: 1px solid gray;
+  background-image: linear-gradient(green, blue);
+
+  background-image: linear-gradient(to right bottom, green, blue, red);
+  /* will start from left top and move to right bottom */
+
+  background-image: linear-gradient(to right, green, blue, red);
+  /* will start from left top and move to right */
+
+  background-image: linear-gradient(120deg, green, blue, red);
+  /* will start from left top and move to 120deg */
+
+  background-image: radial-gradient(green, blue);
+
+  background-image: radial-gradient(circle, green, blue);
+  /* by default radial gradient will move in ellipse shape, to change that we added circle */
+
+  background-image: radial-gradient(green 10%, red 30%, rgb(68, 0, 255) 40%);
+  /* will start from left top and move to 120deg */
+}
