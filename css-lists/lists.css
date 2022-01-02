@@ -1,0 +1,14 @@
+ul {
+  list-style-type: square;
+  list-style-position: inside;
+
+  list-style-image: url("./pngtree-vector-right-arrow-icon-png-image_956430.png");
+  /* We can also use image in list-style-type instead of bullet points, numbers etc
+  as seen above */
+}
+ol {
+  list-style-type: upper-roman;
+}
+li {
+  border: 1px solid grey;
+}
