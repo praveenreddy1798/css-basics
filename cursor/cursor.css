@@ -1,0 +1,7 @@
+/* Cursor is basically used to tell what kind of pointer should the mouse be  */
+
+/* Experiment with all thr available ones to see what it does */
+
+div {
+  cursor: pointer;
+}
