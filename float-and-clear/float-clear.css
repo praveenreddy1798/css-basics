@@ -1,0 +1,60 @@
+/* Float is basically used to adjust with elements and float
+in the respective direction and make things look pretty */
+
+#img-1 {
+  height: 50px;
+  width: 50px;
+  float: right;
+}
+#img-2 {
+  height: 50px;
+  width: 50px;
+  float: left;
+}
+/* In the above img-1 and img-2 we can see that the images are floating to left and 
+right adjusting to the dimensions of text prettiering it. */
+
+img {
+  height: 50px;
+  width: 50px;
+  float: right;
+  clear: right;
+  /* if we use float right and clear right, then if there are to elements floating
+    at the right it will come one below the other in the right */
+}
+/* div {
+  height: 500px;
+  border: 1px solid red;
+} */
+#div-1 {
+  height: 400px;
+  width: 70%;
+  float: left;
+  background-color: rgb(201, 204, 54);
+}
+#div-2 {
+  height: 200px;
+  width: 30%;
+  float: left;
+  background-color: pink;
+}
+#div-3 {
+  clear: both;
+  /* clear both is used when you want the element to come to new line */
+  /* In this case because the height of the sidebar and content are different, the third div which
+  which doesnt have float property will come and settle below the sidebar. To bring that to next 
+  line we use clear:both; */
+  background-color: rgb(185, 1, 31);
+}
+
+/* 
+Some issues with float are
+
+1. When there is image in container and when we use float sometimes it tends
+to come out of the container, we need to add overflow:auto to its container
+to get it to normal
+
+2. When two containers of different height are made to float next to next,
+there are chances where the third div which doesnt have float propery get to float,
+to avaoid this we need to use float: clear;
+*/
