@@ -1,0 +1,23 @@
+/* :: is for psuedo-elements */
+
+p::first-letter {
+  color: red;
+}
+
+p::first-line {
+  color: green;
+}
+
+h1::before {
+  content: url("../sprite/sprite.png");
+}
+
+h1::after {
+  content: " Amazing";
+}
+
+::selection {
+  color: green;
+}
+/* global-selection => When any text is selected the color will be green 
+instead of the default white */
