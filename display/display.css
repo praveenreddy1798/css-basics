@@ -1,0 +1,39 @@
+/*
+1. Four important properties of display
+block
+inline
+inline-block
+none 
+*/
+
+/* 2. some elements that take block as default
+div
+h1
+form
+
+some elements that take inline as default
+a
+img
+span */
+
+/* 3. block
+1. new line
+2. takes full width
+3. height and width can be applied
+
+inline
+1. not new start
+2. no full width
+3. height and width cannot be applied
+
+inline-block
+1. not new start
+2. no full width
+3. height and width can be applied
+
+*/
+
+/* 4. Difference between display: none; and visibility:hidden;
+The difference between both is that display:none will make the element
+vanish without occupying any space whereas the visibility:none will make
+the element vanish occupying its respective space */
