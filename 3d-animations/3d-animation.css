@@ -1,0 +1,32 @@
+/* The perspective property is used to give a 3D-positioned element some perspective.
+
+The perspective property defines how far the object is away from the user.
+So, a lower value will result in a more intensive 3D effect than a higher value
+because if the distance is lower u can see the depth in detail, fom far it will
+just look like a plain box.
+
+When defining the perspective property for an element, 
+it is the CHILD elements that get the perspective view, NOT the element itself. */
+
+#cover {
+  border: 2px solid red;
+  height: 200px;
+  width: 200px;
+  margin: 150px;
+  background-color: aqua;
+}
+#content {
+  height: 200px;
+  width: 200px;
+  background-color: yellowgreen;
+  
+  transform: perspective(30px) rotate3d(0, 0, 50, 2deg);
+  /* rotate3d (x,y,z,angle) 
+  The values in rotate3d should be pure number, the values u give will be taken in px
+  */
+
+  transform: perspective(30px) translate(50px, 50px, 50px);
+  /* translate (x,y,z) 
+   If z is more it will be enlarged, if less it will get diminished in translate
+   */
+}

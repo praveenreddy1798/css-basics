@@ -1,0 +1,72 @@
+/* Note: transform function can only be used on inline-block or block and not on inline element */
+/* If you want to use on inline-element, then convert it to inline-block and use it */
+a {
+  display: inline-block;
+  /* Because <a> tag is a inline tag we need to convert
+  it to inline-block or block for the trasnform to work */
+
+  transform: translate(50%, 50%);
+  /* translate(x-direction, y-direction)
+  Can be used to move only to inline-block or block
+   can be used in general but used
+  mostly to give a animation feel when we hover */
+
+  transform: rotate(20deg);
+  /* can also be in rad or grad or turn */
+
+  transform: scale(0.5, 2);
+  /* How much times to scale along scale(x-direction, y-direction) 
+  So in the above example on width it will reduce by half and along lenghth
+  it will double its size
+  */
+  transform: scaleX(0.5);
+  /* only scale size of width */
+  transform: scaleX(2);
+  /* only scale size of length */
+
+  transform-origin: 0% 100%;
+  /* Suppose if you want to change the point of reference from which the
+  rotate or any animation should happen, we change their origin using
+  transform-origin 
+  tranform-origin: (x-direction, y-direction)
+  */
+
+  transform: matrix(1, 2, 3, 4, 5, 6);
+  /* matrix(scalex(), skewY(), skewX(), scaleY(), translateX(), translateY()); 
+  When u want to use all properties in a single section then we can use matrix,
+  the unused ones can be set to zero
+  */
+}
+
+/* none | <transform-list>
+where 
+<transform-list> = <transform-function>+
+
+where 
+<transform-function> = <matrix()> | <translate()> | <translateX()> | <translateY()> | <scale()> | <scaleX()> | <scaleY()> | <rotate()> | <skew()> | <skewX()> | <skewY()> | <matrix3d()> | <translate3d()> | <translateZ()> | <scale3d()> | <scaleZ()> | <rotate3d()> | <rotateX()> | <rotateY()> | <rotateZ()> | <perspective()>
+
+where 
+<matrix()> = matrix( <number>#{6} )
+<translate()> = translate( <length-percentage> , <length-percentage>? )
+<translateX()> = translateX( <length-percentage> )
+<translateY()> = translateY( <length-percentage> )
+<scale()> = scale( <number> , <number>? )
+<scaleX()> = scaleX( <number> )
+<scaleY()> = scaleY( <number> )
+<rotate()> = rotate( [ <angle> | <zero> ] )
+<skew()> = skew( [ <angle> | <zero> ] , [ <angle> | <zero> ]? )
+<skewX()> = skewX( [ <angle> | <zero> ] )
+<skewY()> = skewY( [ <angle> | <zero> ] )
+<matrix3d()> = matrix3d( <number>#{16} )
+<translate3d()> = translate3d( <length-percentage> , <length-percentage> , <length> )
+<translateZ()> = translateZ( <length> )
+<scale3d()> = scale3d( <number> , <number> , <number> )
+<scaleZ()> = scaleZ( <number> )
+<rotate3d()> = rotate3d( <number> , <number> , <number> , [ <angle> | <zero> ] )
+<rotateX()> = rotateX( [ <angle> | <zero> ] )
+<rotateY()> = rotateY( [ <angle> | <zero> ] )
+<rotateZ()> = rotateZ( [ <angle> | <zero> ] )
+<perspective()> = perspective( <length> )
+
+where 
+<length-percentage> = <length> | <percentage> */
