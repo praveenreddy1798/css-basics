@@ -1,0 +1,28 @@
+#cover {
+  width: 100px;
+  height: 100px;
+  background-color: brown;
+  transition-property: width, background-color;
+  /* For the transition to apply to any property we must 
+  mention them in the transition property 
+  If you want it to mention to all the property of a element
+  then we can do 
+  transition-property: all;
+  */
+
+  transition-duration: 1s, 1s;
+  transition-delay: 1s, 1s;
+  /* We have added 1s, 1s => one for width and other for background-color */
+
+  transition-timing-function: ease;
+  /* How the transition has to be in its journey */
+
+  transition: margin-right 4s ease-in-out 1s;
+  /* property name | duration | easing function | delay */
+  /* Short hand for transition */
+}
+
+#cover:hover {
+  width: 300px;
+  background-color: green;
+}

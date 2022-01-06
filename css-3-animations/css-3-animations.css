@@ -1,0 +1,54 @@
+/* syntax
+@keyframes name {
+    from {
+
+    }
+    to {
+
+    }
+} */
+@keyframes changeColor {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: green;
+  }
+  50% {
+    width: 500px;
+    height: 500px;
+  }
+  75% {
+    width: 100px;
+    height: 500px;
+  }
+  100% {
+    background-color: yellow;
+  }
+}
+#animate {
+  background-color: rgb(255, 0, 200);
+  height: 250px;
+  width: 250px;
+
+  animation-name: changeColor;
+  /* In the animation name we need to write the keyframe function name */
+
+  animation-duration: 4s;
+  /* animation duration is compulsory, because it is on the animation
+  duration that the percentage we give gets applied
+  eg: 25% of 4s is 1s, at 1s to 2s background-color will be green;; */
+
+  animation-iteration-count: 5;
+  /* How many times you want the animation that you created for a duration to 
+  repeat */
+
+  animation-timing-function: ease;
+  /* how you want the animation journey to be */
+
+  animation-delay: 2s;
+
+  animation-direction: reverse;
+  /* If you want the animation to start in reverse direction i.e from "to" to "from"
+  or if you want it to be alternate etc you can use animation-direction property */
+}
