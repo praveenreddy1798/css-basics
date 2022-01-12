@@ -1,0 +1,22 @@
+div {
+  column-count: 3;
+  /* How many columns you want to divide it in */
+
+  column-gap: 50px;
+  /* How much gap you want between two columns */
+
+  /* column-rule-style: solid;
+    column-rule-width: 1px;
+    column-rule-color: red; */
+  column-rule: 1px solid red;
+  /* same like for border: short hand syntax for column-rule - 
+  "width style color" */
+
+  column-width: 300px;
+  /* Minimum width of the column */
+}
+h1 {
+  column-span: all;
+  /* If you want it to spread along all columns 
+  instead of getting seperated */
+}

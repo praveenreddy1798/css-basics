@@ -1,0 +1,84 @@
+/* 1. element selector */
+li {
+  color: red;
+}
+
+/* 2. Id selector */
+#list2 {
+  color: green;
+}
+
+/* 3. Class selector */
+.list5 {
+  color: rgb(139, 139, 39);
+}
+
+/* 4. Psuedo class selector */
+a:hover {
+  color: pink;
+}
+/* You can take a look of other psuedo class
+selectors in the earlier covered section */
+
+/* 5. Psuedo element selector */
+p::first-line {
+  color: rgb(235, 12, 49);
+}
+/* You can take a look of other psuedo element
+  selectors in the earlier covered section */
+
+/* 6. Attribute Selector */
+/* syntax element[attribute=value] */
+/* You basically can select the element by any of their attribute */
+a[href="https://www.google.com"]
+{
+  color: yellow;
+}
+
+input[type="password"] {
+  color: green;
+}
+
+/* 7. Universal Selector */
+/* Applies style to all html tags it encounters */
+* {
+  border: 1px solid green;
+}
+
+/* 8. Combination Selector */
+/* 
+normal sybling - h1 and ul
+just-after-sybling - h1 and p
+direct-child - div and h, ul and li
+indirect-child - div and li 
+*/
+
+div a {
+  font-size: 40px;
+}
+/* All anchor tags inside div at any levels will get styled */
+
+div > a {
+  font-weight: 900;
+  color: black;
+}
+/* All anchor tags inside div that are direct child 
+( basically in same scope) */
+
+div ~ a {
+  background-color: rgb(163, 13, 38);
+}
+/* All anchor tags that are general sybling (sybling irrespective of
+    immediate next or far next will get the style applied*/
+
+div + a {
+  background-color: pink;
+}
+/* The single anchor tag that is just-after-syblling of div 
+will get the style applied*/
+
+h1,
+p {
+  background-color: brown;
+}
+/* Stylling multiple elements together */
