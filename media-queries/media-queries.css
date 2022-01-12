@@ -1,0 +1,52 @@
+#div1 {
+  width: 70%;
+  float: left;
+  background-color: aqua;
+}
+
+#div2 {
+  width: 30%;
+  float: left;
+  background-color: rgb(145, 255, 0);
+}
+
+h1 {
+  font-size: 80px;
+}
+@media screen and (max-width: 400px) {
+    #div1 {
+      width: 30%;
+      background-color: rgb(180, 174, 231);
+    }
+  
+    #div2 {
+      width: 30%;
+      background-color: rgb(255, 0, 0);
+    }
+  }
+
+@media screen and (min-width: 800px) {
+  #div1 {
+    width: 10%;
+    background-color: rgb(180, 174, 231);
+  }
+
+  #div2 {
+    width: 10%;
+    background-color: rgb(255, 0, 0);
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 800px) {
+  #div1 {
+    width: 100%;
+    background-color: rgb(12, 19, 19);
+  }
+
+  #div2 {
+    width: 100%;
+    background-color: rgb(255, 81, 0);
+  }
+}
+
+
