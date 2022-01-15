@@ -1,0 +1,48 @@
+img {
+  width: 300px;
+  height: 300px;
+  object-fit: fill;
+}
+
+.grid-container {
+  display: grid;
+  background-color: yellow;
+  margin: 10px;
+  padding: 20px;
+  gap: 10px;
+  height: 50vh;
+  grid-template-areas:
+    "header header header header header header"
+    "menu main main main right right"
+    "menu footer footer footer footer footer";
+
+/* grid-template-areas is another way of defining the start point and end point
+from where each grid child should start and end 
+The above tells there are three rows and 6 columns where 1 row and 6 columns will take header
+and 2nd row four columns will take main and 5th and 6th column will take right and so on
+*/
+}
+
+.grid-child {
+  border: 1px solid black;
+  background-color: tomato;
+  text-align: center;
+  font-size: 40px;
+  padding: 30px;
+}
+
+#grid-child-one {
+  grid-area: header;
+}
+#grid-child-two {
+  grid-area: menu;
+}
+#grid-child-three {
+  grid-area: main;
+}
+#grid-child-four {
+  grid-area: right;
+}
+#grid-child-five {
+  grid-area: footer;
+}
